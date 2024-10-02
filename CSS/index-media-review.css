@@ -1,0 +1,20 @@
+html {
+    background-color: #636b65;
+    font-family: Ubuntu;
+}
+
+table, tr, th, header {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #111;
+    text-align: center;
+    margin: auto;
+}
+
+header {
+    background-color: #cbd1cc;
+}
+
+table {
+    background-color: #b0b8b2;
+}
