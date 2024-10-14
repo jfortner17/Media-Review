@@ -42,26 +42,151 @@ header, footer {
     text-align: center;
 }
 
-header, table, tr, td, th, footer p {
+header, div, footer p {
     border-style: solid;
     border-color: #111;
     border-width: 2px;
 }
 
-table, tr, td, th, footer p{
+ footer p{
     background-color: #b0b8b2;
+    font-size: 1em;
 }
 
 header {
     background-color: #cbd1cc;
-    padding: 10px;
+    font-size: 1.9em;
 }
 
 
-table {
-    text-align: center;
+/** Review Tables Styles **/
+.table {
+    display: grid;
+    grid-template-columns: 0.25fr 0.25fr 2fr 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    background-color: #b0b8b2;
+    font-size: 1.5em;
+}
+
+img {
+    max-width: 100%;
+}
+
+.titlehead {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-weight: bold;
+}
+
+.title {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
 .review {
-    text-align: left;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: -1;
+}
+
+.statushead {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    font-weight: bold;
+}
+
+.status {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.airedhead {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    font-weight: bold;
+}
+
+.aired {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.directorhead {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    font-weight: bold;
+}
+
+.director {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.ratinghead {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    font-weight: bold;
+}
+
+.rating {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+.startdatehead {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    font-weight: bold;
+}
+
+.startdate {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+
+.completedatehead {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    font-weight: bold;
+}
+
+.completedate {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+.movieposter {
+    grid-column-start: 4;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: -1;
 }
