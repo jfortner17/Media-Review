@@ -3,18 +3,34 @@ html {
     font-family: Ubuntu;
 }
 
-table, tr, th, header {
+header, .footer, .navigation h2 {
     border-style: solid;
     border-width: 2px;
     border-color: #111;
     text-align: center;
-    margin: auto;
 }
 
 header {
     background-color: #cbd1cc;
+    font-size: 1.9em;
 }
 
-table {
+.footer, h2 {
     background-color: #b0b8b2;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.25em;
+}
+
+.navigation h2 {
+    padding: 0.5em;
+}
+
+.footer {
+    width: 10em;
+    margin: auto;
 }
